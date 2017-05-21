@@ -10,16 +10,13 @@ import static org.junit.Assert.*;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 public class ExampleUnitTest {
-    @Test
-    public void addition_isCorrect() throws Exception {
-        assertEquals(4, 2 + 2);
-    }
 
     String p1 = "password";
     String p2 = "passwd";
     String p3 = "csci3130";
     Validate v1 = new Validate();
 
+    //stage 1
     @Test
     public void password_validation1()throws Exception {
         assertTrue(v1.Validate(p1) == false);
@@ -34,4 +31,5 @@ public class ExampleUnitTest {
     public void password_validation3()throws Exception {
         assertTrue(v1.Validate(p3) == true);
     }
+
 }
